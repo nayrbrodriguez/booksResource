@@ -16,10 +16,9 @@ class BooksController extends Controller
     public function index()
     {
         $books = BookModel::all();
-        
+
         return $books;
     }
-
 
     /**
      * Store a newly created resource in storage.
