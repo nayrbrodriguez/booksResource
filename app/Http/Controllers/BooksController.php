@@ -8,6 +8,10 @@ use App\Books as BookModel;
 
 class BooksController extends Controller
 {
+    // public function __construct()
+    // {
+    //     $this->middleware('auth:api');
+    // }
     /**
      * Display a listing of the resource.
      *
@@ -67,7 +71,7 @@ class BooksController extends Controller
     {
         $book = BookModel::find($id);
         $book->update($request->all());
-
+        // dd($book);
         return $book;
     }
 
